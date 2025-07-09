@@ -30,7 +30,7 @@ body{
 .all .center .card{
     height: 400px;
     width: 400px;
-    border: white 1px solid;
+    
     background-color: transparent;
 }
 .center{
@@ -51,7 +51,9 @@ body{
     opacity: .5;
     cursor: pointer;
     transition: 1s;
+
 }
+
 .after img:hover{
     opacity: 1;
     scale: 1.2;
