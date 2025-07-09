@@ -1,6 +1,8 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    
+    margin: 0;
+    padding: 0;
+
     color: #fff;
 }
 body{
@@ -30,7 +32,7 @@ body{
 .all .center .card{
     height: 400px;
     width: 400px;
-    border: none;
+    
     background-color: transparent;
 }
 .center{
@@ -65,6 +67,7 @@ body{
  
   justify-content: space-around;
   align-items: flex-start;
+  width: 100%;
 }
 
 .col-2 , .col-1 {
@@ -145,23 +148,32 @@ justify-content: center;
 .row-cols-md-3 {
     padding: 20px;
 }
-.log{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 50px;
-margin-bottom: 100px;
+.log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 0 20px;
+  flex-direction: row; /* افتراضيًا أفقي */
+  gap: 20px;
 }
-.form input{
-    display: grid;
-    grid-column: 1;
-    margin-left: 50%;
-    margin-top: 15px;
-    width: 150%;
+
+@media (max-width: 768px) {
+  .log {
+    flex-direction: column; /* في الموبايل عمودي */
+    justify-content: center;
+  }
+}
+
+.form input {
+    width: 100%;
+    max-width: 400px; /* أقصى عرض */
+    margin: 10px auto; /* لتوسيط العنصر تلقائيًا */
+    padding: 10px;
     border-radius: 8px;
-    border: .2px;
-    padding-top: 5px;
-    padding-left: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 .aa{
     background-color: orange;
