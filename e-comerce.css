@@ -44,6 +44,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .after img{
     width: 100px;
@@ -53,9 +54,17 @@ body{
     opacity: .5;
     cursor: pointer;
     transition: 1s;
+    
 
 }
-
+@media (max-width: 768px) {
+  .after {
+    flex-direction: column; /* نخلي الصور فوق بعض */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .after img:hover{
     opacity: 1;
     scale: 1.2;
@@ -68,8 +77,15 @@ body{
   justify-content: space-around;
   align-items: flex-start;
   width: 100%;
+  
 }
 
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* خلى العناصر عمودي في الموبايل */
+    align-items: center;     /* وسّط المحتوى */
+    text-align: center;      /* وسّط النصوص */
+  }}
 .col-2 , .col-1 {
   
   margin: 20px 50px;
